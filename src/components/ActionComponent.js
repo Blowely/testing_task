@@ -117,7 +117,6 @@ export const ActionComponent = (props) => {
 
         const date = new Date(el.date);
 
-
         switch (view){
             case 'main': return (
                 <TableCell align="right">

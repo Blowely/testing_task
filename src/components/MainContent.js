@@ -10,10 +10,6 @@ export const MainContent = (props) => {
     const [remoteData, setRemoteData]= useState([]);
     const [listFavorites, setListFavorites] = useState({});
     const [historyFlow, setHistoryFlow] = useState([]);
-    const [lol, setTitles] = useState({});
-
-
-
 
     useEffect(() => {
         axios.get('https://jsonplaceholder.typicode.com/photos')
@@ -21,7 +17,6 @@ export const MainContent = (props) => {
                 setRemoteData(res.data)
             });
     }, [])
-
 
     const conditionPagesOfHistory = (page === 'history' || page === 'addHistory' || page === 'remHistory');
 

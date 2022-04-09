@@ -4,7 +4,6 @@ import '../../App.css';
 import {TableComponent} from "./TableComponent/TableComponent";
 import tritium from "tritium";
 
-
 export const MainPage = (props) => {
     const {remoteData, listFavorites, setListFavorites, setHistoryFlow, setRemoteData} = props;
 
@@ -27,7 +26,6 @@ export const MainPage = (props) => {
         return counter;
     }
 
-
     const inputNameHandler = (event) => {
         const inputValue = event.target.value;
 
@@ -45,7 +43,6 @@ export const MainPage = (props) => {
                     setSearchData((prev) => [...prev, res]);
                 }
             })
-
         } else {
             setSearchData([]);
         }
@@ -90,8 +87,6 @@ export const MainPage = (props) => {
                     />
                 </div>
             </div>
-
         </div>
     )
-
 }

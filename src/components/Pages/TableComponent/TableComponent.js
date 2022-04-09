@@ -10,7 +10,6 @@ import '../../../App.css';
 import {ActionComponent} from "../../ActionComponent";
 import {v4} from "uuid";
 
-
 export const TableComponent = (props) => {
     const {view, listFavorites, setListFavorites, remoteData, setHistoryFlow, historyFlow, setRemoteData, searchData, setSearchData} = props;
 
